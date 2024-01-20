@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Assignment 10 Card</title>
+  </head>
+  <style>
+    * {
+      padding: 0%;
+      margin: 0%;
+      box-sizing: border-box;
+      font-family: "Poppins";
+    }
+    .card-main-container {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      color: #fff;
+    }
+    .card-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    .card-content {
+      width: 300px;
+      height: auto;
+      box-shadow: 1px 1px 10px gray;
+      border-radius: 5px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition-duration: 0.5s;
+    }
+    .card-content:hover {
+      margin-bottom: 50px;
+      border-radius: 120px 120px 0px 0px;
+    }
+    .card-content p {
+      font-size: 14px;
+    }
+    .card-content img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .card-text-content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  </style>
+  <body>
+    <div class="card-main-container">
+      <div class="card-container">
+        <div class="card-content">
+          <div><img src="images/nature.avif" alt="" /></div>
+          <div><h5>Nature</h5></div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Suscipit, deleniti temporibus reprehenderit corrupti, veritatis
+              possimus ex hic libero ipsam modi officiis perferendis, ipsum
+              explicabo vitae magnam accusamus! Provident, ad porro?
+            </p>
+          </div>
+        </div>
+        <div class="card-content">
+          <div><img src="images/food.avif" alt="" /></div>
+          <div><h5>Food</h5></div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Suscipit, deleniti temporibus reprehenderit corrupti, veritatis
+              possimus ex hic libero ipsam modi officiis perferendis, ipsum
+              explicabo vitae magnam accusamus! Provident, ad porro?
+            </p>
+          </div>
+        </div>
+        <div class="card-content">
+          <div><img src="images/hiking.avif" alt="" /></div>
+          <div class="card-text-content">
+            <div><h5>Hiking</h5></div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Suscipit, deleniti temporibus reprehenderit corrupti, veritatis
+                possimus ex hic libero ipsam modi officiis perferendis, ipsum
+                explicabo vitae magnam accusamus! Provident, ad porro?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

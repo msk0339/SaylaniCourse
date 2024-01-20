@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Assignment 9</title>
+  </head>
+  <style>
+    * {
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
+    }
+    .main-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #fff;
+      width: 100%;
+      background-image: url("our-service-bg.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: #000;
+    }
+    .input-fields-container {
+      width: 350px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 5px;
+      box-shadow: 1px 1px 10px gray;
+    }
+    .fields-area {
+      width: 100%;
+      padding: 10px;
+    }
+    .fields-area input {
+      width: 100%;
+      padding: 15px;
+      background-color: #858585;
+      color: #fff;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+    }
+    .fields-area input:focus {
+      border-bottom: 2px solid white;
+    }
+    .fields-area input::placeholder {
+      font-family: "Montserrat";
+      font-weight: 500;
+      color: #fff;
+    }
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    .fields-area textarea {
+      resize: none;
+      font-family: "Montserrat";
+      width: 100%;
+      background-color: #858585;
+      color: #fff;
+      padding: 15px 15px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+    }
+    .fields-area textarea:focus {
+      outline: 2px solid #fff;
+    }
+
+    .fields-area textarea::placeholder {
+      color: #fff;
+      font-family: "Montserrat";
+      font-weight: 500;
+    }
+
+    .btn-box {
+      display: flex;
+      gap: 20px;
+    }
+
+    .submit-btn button {
+      padding: 10px;
+      background-color: #9929f2;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      color: #fff;
+      font-family: "Montserrat";
+      text-transform: capitalize;
+      font-size: 14px;
+      transition-duration: 0.7s;
+    }
+    .submit-btn button:hover {
+      outline: #fff;
+      cursor: pointer;
+      border-radius: 50px;
+    }
+    .cancel-btn button {
+      padding: 10px;
+      background-color: #fff;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      color: #000;
+      font-family: "Montserrat";
+      text-transform: capitalize;
+      font-size: 14px;
+      transition-duration: 0.7s;
+    }
+    .cancel-btn button:hover {
+      outline: #fff;
+      cursor: pointer;
+      border-radius: 50px;
+    }
+  </style>
+  <body>
+    <div class="main-container">
+      <div class="input-fields-container">
+        <div class="fields-area">
+          <input type="text" placeholder="name" class="input-fields" />
+        </div>
+        <div class="fields-area">
+          <input type="email" placeholder="email" class="input-fields" />
+        </div>
+        <div class="fields-area">
+          <input type="password" placeholder="password" class="input-fields" />
+        </div>
+        <div class="fields-area">
+          <input type="number" placeholder="number" class="input-fields" />
+        </div>
+        <div class="fields-area">
+          <textarea
+            cols="30"
+            rows="8"
+            placeholder="Message"
+            class="textarea-field"
+          ></textarea>
+        </div>
+        <div class="btn-box">
+          <div class="submit-btn"><button>Submit</button></div>
+          <div class="cancel-btn">
+            <button>Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
